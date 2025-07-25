@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'pokemon_detail_page.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -181,8 +181,7 @@ class PokemonCard extends StatelessWidget {
   final Pokemon pokemon;
   final VoidCallback onTap;
 
-  const PokemonCard({Key? key, required this.pokemon, required this.onTap})
-    : super(key: key);
+  const PokemonCard({super.key, required this.pokemon, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

@@ -5,8 +5,7 @@ import 'dart:convert';
 class PokemonDetailPage extends StatefulWidget {
   final int pokemonId;
 
-  const PokemonDetailPage({Key? key, required this.pokemonId})
-    : super(key: key);
+  const PokemonDetailPage({super.key, required this.pokemonId});
 
   @override
   State<PokemonDetailPage> createState() => _PokemonDetailPageState();
@@ -243,7 +242,7 @@ class _PokemonDetailPageState extends State<PokemonDetailPage>
   }
 
   Widget _buildTabSection() {
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height * 0.6,
       child: Column(
         children: [
